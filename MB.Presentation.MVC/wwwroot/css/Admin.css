@@ -1,0 +1,23 @@
+﻿.fa-edit {
+    color: #F7AA9B;
+}
+.fa-edit:hover {
+    color: #ff0000 !important;
+}
+.fa-retweet {
+    color: #C2FFB7;
+    font-size: 16px;
+}
+.fa-retweet:hover {
+    color: #3CFF19 !important;
+}
+.fa-check {
+    color: red;
+}
+.fa-times {
+    color: #3CFF19;
+}
+.fa-btn-adm {
+    left: 15px;
+    position: relative;
+}

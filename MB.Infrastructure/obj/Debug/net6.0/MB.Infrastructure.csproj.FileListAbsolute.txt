@@ -1,0 +1,17 @@
+D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Infrastructure.deps.json
+D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Infrastructure.runtimeconfig.json
+D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Infrastructure.dll
+D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Infrastructure.pdb
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.csproj.AssemblyReference.cache
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.AssemblyInfoInputs.cache
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.AssemblyInfo.cs
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.csproj.CoreCompileInputs.cache
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.dll
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\refint\MB.Infrastructure.dll
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.pdb
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.genruntimeconfig.cache
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\ref\MB.Infrastructure.dll
+D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Domain.dll
+D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Domain.pdb
+D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.csproj.CopyComplete

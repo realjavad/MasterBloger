@@ -1,0 +1,22 @@
+﻿@page
+@model MB.Presentation.MVC.Pages.CreateModel
+@{
+}
+
+<h1>
+    Add New Blog
+</h1>
+
+        @if(Model.ErrorMessage != null)
+        {
+            <div style="color: #fff" class="alert bg-danger">@Model.ErrorMessage</div>
+        }
+
+<div class="p-5" style="border-radius: 1em; border: .09em solid gray">
+     <form method="post">
+        <span class="w-100 d-flex justify-content-between">
+             <input type="text" id="exampleInputEmail1" class="form-control w-100 mx-2" name="title" placeholder="Your Blog Title"/>
+             <button type="submit"  class="btn btn-success mx-2">Add</button>
+        </span>
+    </form>
+</div>
