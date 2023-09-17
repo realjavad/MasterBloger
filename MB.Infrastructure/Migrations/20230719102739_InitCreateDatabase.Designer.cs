@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MB.Infrastructure.Migrations
 {
-    [DbContext(typeof(ArticleCategoryContext))]
+    [DbContext(typeof(MasterBloggerContext))]
     [Migration("20230719102739_InitCreateDatabase")]
     partial class InitCreateDatabase
     {

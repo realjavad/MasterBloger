@@ -1,4 +1,5 @@
-﻿using MB.Domain.ArticleCategoryApp.Exception;
+﻿using MB.Domain.ArticleAgg;
+using MB.Domain.ArticleCategoryApp.Exception;
 using MB.Domain.ArticleCategoryApp.Services;
 
 namespace MB.Domain.ArticleCategoryApp
@@ -9,6 +10,7 @@ namespace MB.Domain.ArticleCategoryApp
         public string Title { get; private set; }
         public bool IsDeleted { get; private set; }
         public DateTime CreationDate { get; private set; }
+        public ICollection<Article> Articles { get; set; }
 
         protected ArticleCategory()
         {
@@ -22,6 +24,7 @@ namespace MB.Domain.ArticleCategoryApp
             Title = title;
             IsDeleted = false;
             CreationDate = DateTime.Now;
+            Articles = new List<Article>();
         }
 
         public void GuadAgainsEmptyTitle(string title)

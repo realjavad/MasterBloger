@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MB.Infrastructure.Migrations
 {
-    [DbContext(typeof(ArticleCategoryContext))]
+    [DbContext(typeof(MasterBloggerContext))]
     partial class ArticleCategoryContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

@@ -13,6 +13,7 @@ namespace MB.Infrastructure.Mapping
             builder.Property(x => x.Title).IsRequired().HasMaxLength(150);
             builder.Property(x => x.CreationDate).HasDefaultValue(DateTime.Now.ToString());
             builder.Property(x => x.IsDeleted).HasDefaultValue("false");
+            builder.HasMany(x => x.Articles).WithOne(x => x.ArticleCategory).HasForeignKey(x => x.ArticleCategoryId);
         }
     }
 }

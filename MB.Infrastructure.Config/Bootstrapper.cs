@@ -16,7 +16,7 @@ namespace MB.Infrastructure.Config
             services.AddTransient<IArticleCategoryApplication, ArticleCategoryApplication>();
             services.AddTransient<IArticleCategoryRepository, ArticleCategoryRepository>();
             services.AddTransient<IArticleCategoryValidatorService, ArticleCategoryValidatorService>();
-            services.AddDbContext<ArticleCategoryContext>(X => X.UseSqlServer(connectionString));
+            services.AddDbContext<MasterBloggerContext>(X => X.UseSqlServer(connectionString));
         }
     }
 }

@@ -5,8 +5,8 @@ namespace MB.Infrastructure.Repository
 {
     public class ArticleCategoryRepository : IArticleCategoryRepository
     {
-        private readonly ArticleCategoryContext _context;
-        public ArticleCategoryRepository(ArticleCategoryContext context)
+        private readonly MasterBloggerContext _context;
+        public ArticleCategoryRepository(MasterBloggerContext context)
         {
             _context = context;
         }
