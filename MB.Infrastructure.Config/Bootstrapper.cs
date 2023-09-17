@@ -1,5 +1,7 @@
 ﻿using MB.Application;
+using MB.Application.Contracts.Article;
 using MB.Application.Contracts.ArticleCategory;
+using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleCategoryApp;
 using MB.Domain.ArticleCategoryApp.Services;
 using MB.Infrastructure.Context;
@@ -15,6 +17,8 @@ namespace MB.Infrastructure.Config
         {
             services.AddTransient<IArticleCategoryApplication, ArticleCategoryApplication>();
             services.AddTransient<IArticleCategoryRepository, ArticleCategoryRepository>();
+            services.AddTransient<IArticleApplication, ArticleApplication>();
+            services.AddTransient<IArticleRepository, ArticleRepository>();
             services.AddTransient<IArticleCategoryValidatorService, ArticleCategoryValidatorService>();
             services.AddDbContext<MasterBloggerContext>(X => X.UseSqlServer(connectionString));
         }

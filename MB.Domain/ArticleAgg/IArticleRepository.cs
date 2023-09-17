@@ -8,6 +8,6 @@ namespace MB.Domain.ArticleAgg
 {
     public interface IArticleRepository
     {
-
+        List<Article> GetAll();
     }
 }
