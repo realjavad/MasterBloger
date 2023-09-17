@@ -13,20 +13,18 @@
             </button>
         </div>
         <div class="p-4 pt-5">
-            <h1>
-                <a href="index.html" class="logo">Splash</a>
+            <h1 style="font-size: 2.5em">
+                <a href="index.html" class="logo">Dashboard</a>
             </h1>
             <ul class="list-unstyled components mb-5">
                 <li class="active">
                     <a
-                        href="#homeSubmenu"
-                        data-toggle="collapse"
-                        aria-expanded="false"
-                        class="dropdown-toggle">
-                        Home
-                    </a
-                    >
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        asp-page="/Admin/Index"
+                    >Home</a>
+                    @*                 data-toggle="collapse"
+                    aria-expanded="false"
+                    class="dropdown-toggle"*@
+                    @*                    <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a href="#">Home 1</a>
                         </li>
@@ -36,21 +34,18 @@
                         <li>
                             <a href="#">Home 3</a>
                         </li>
-                    </ul>
+                    </ul>*@
                 </li>
                 <li>
                     <a href="#">About</a>
                 </li>
                 <li>
                     <a
-                        href="#pageSubmenu"
-                        data-toggle="collapse"
-                        aria-expanded="false"
-                        class="dropdown-toggle">
+                        href="#pageSubmenu">
                         Pages
                     </a
                     >
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
+@*                    <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
                             <a href="#">Page 1</a>
                         </li>
@@ -60,13 +55,13 @@
                         <li>
                             <a href="#">Page 3</a>
                         </li>
-                    </ul>
+                    </ul>*@
                 </li>
                 <li>
                     <a href="#">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#"><b class="honeydew">My Articles</b></a>
                 </li>
             </ul>
 
@@ -102,7 +97,13 @@
 
     <!-- Page Content  -->
     <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4">Sidebar #02</h2>
+        
+        <div class="d-flex justify-content-between">
+            <h2 class="mb-4">My Article List</h2>
+            <div>
+                <a asp-page="/Admin/NewArticle" class="btn btn-success">Create New Artcle</a>
+            </div>
+        </div>
 
         <table class="table">
             <thead>
