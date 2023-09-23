@@ -1,0 +1,158 @@
+﻿@page
+@model MB.Presentation.MVC.Pages.Admin.ArticlesModel
+@{
+}
+
+<div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="p-4 pt-5">
+            <h1 style="font-size: 2.5em">
+                <a href="index.html" class="logo">Dashboard</a>
+            </h1>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a
+                        asp-page="/Admin/Index"
+                    >Home</a>
+                    @*                 data-toggle="collapse"
+                    aria-expanded="false"
+                    class="dropdown-toggle"*@
+                    @*                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>*@
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a
+                        href="#pageSubmenu">
+                        Pages
+                    </a
+                    >
+@*                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>*@
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#"><b class="honeydew">My Articles</b></a>
+                </li>
+            </ul>
+
+            <div class="mb-5">
+                <h3 class="h6">Subscribe for newsletter</h3>
+                <form action="#" class="colorlib-subscribe-form">
+                    <div class="form-group d-flex">
+                        <div class="icon">
+                            <span class="icon-paper-plane"></span>
+                        </div>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter Email Address"/>
+                    </div>
+                </form>
+            </div>
+
+            <div class="footer">
+                <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                document.write(new Date().getFullYear());
+              </script>
+                    All rights reserved | This template is made with
+                    <i class="icon-heart" aria-hidden="true"></i> by
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 pt-5">
+        
+        <div class="d-flex justify-content-between">
+            <h2 class="mb-4">My Article List</h2>
+            <div>
+                <a asp-page="/Admin/Articles/Create" class="btn btn-success">Create New Artcle</a>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Status</th>
+                <th>CreationDate</th>
+                <th>Article Category Name</th>
+                <th style="color: red">Edit</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            @foreach (var item in Model.articles)
+            {
+                <tr>
+                    <th>@item.Id</th>
+                    <th>@item.Title</th>
+                    <th>
+                        @if (item.IsDeleted == false)
+                        {
+                            <i class="fa fa-check fa-btn-adm"></i>
+                        }
+                        else
+                        {
+                            <i class="fas fa-times fa-btn-adm"></i>
+                        }
+                    </th>
+                    <th>@item.CreationDate</th>
+                    <th>@item.ArticleCategory</th>
+                    <th>
+                        <form method="POST" class="d-inline">
+                            <a
+                                asp-page="/Admin/Articles/Edit"
+                                asp-route-Id="@item.Id"
+                                class="rename"
+                            >
+                                <i class="far fa-edit"></i>
+                            </a>
+                            <input type="hidden" asp-for="id" name="Id" value="@item.Id" />
+                            <button type="submit" class="btn">
+                                <i class="fas fa-retweet"></i>
+                            </button>
+                        </form>
+                    </th>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

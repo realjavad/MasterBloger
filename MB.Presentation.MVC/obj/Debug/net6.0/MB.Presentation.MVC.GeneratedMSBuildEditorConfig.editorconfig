@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\C# project\MasterBlogger\MB.Presentation.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/C\# project/MasterBlogger/MB.Presentation.MVC/Pages/Admin/Articles.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQXJ0aWNsZXMuY3NodG1s
+[D:/C\# project/MasterBlogger/MB.Presentation.MVC/Pages/Admin/Articles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQXJ0aWNsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\# project/MasterBlogger/MB.Presentation.MVC/Pages/Admin/Articles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQXJ0aWNsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\# project/MasterBlogger/MB.Presentation.MVC/Pages/Admin/Articles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQXJ0aWNsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\# project/MasterBlogger/MB.Presentation.MVC/Pages/Admin/Index.cshtml]

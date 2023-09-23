@@ -1,5 +1,6 @@
 ﻿using MB.Domain.ArticleCategoryApp;
 using MB.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace MB.Infrastructure.Repository
 {

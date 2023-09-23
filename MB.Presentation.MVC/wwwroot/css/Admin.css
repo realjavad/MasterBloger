@@ -12,10 +12,10 @@
     color: #3CFF19 !important;
 }
 .fa-check {
-    color: red;
+    color: #3CFF19;
 }
 .fa-times {
-    color: #3CFF19;
+    color: red;
 }
 .fa-btn-adm {
     left: 15px;

@@ -18,9 +18,25 @@ namespace MB.Infrastructure.Repository
             _context = context;
         }
 
+        public void CreateArticle(Article entity)
+        {
+            _context.Articles.Add(entity);
+            Save();
+        }
+
         public List<Article> GetAll()
         {
             return _context.Articles.Include(x => x.ArticleCategory).ToList();
+        }
+
+        public Article GetById(long id)
+        {
+            return _context.Articles.FirstOrDefault(x => x.Id == id);
+        }
+
+        public void Save()
+        {
+            _context.SaveChanges();
         }
     }
 }
