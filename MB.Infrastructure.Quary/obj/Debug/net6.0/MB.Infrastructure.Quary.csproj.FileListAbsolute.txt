@@ -1,0 +1,17 @@
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\bin\Debug\net6.0\MB.Infrastructure.Quary.deps.json
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\bin\Debug\net6.0\MB.Infrastructure.Quary.dll
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\bin\Debug\net6.0\MB.Infrastructure.Quary.pdb
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\bin\Debug\net6.0\MB.Domain.dll
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\bin\Debug\net6.0\MB.Infrastructure.dll
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\bin\Debug\net6.0\MB.Infrastructure.pdb
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\bin\Debug\net6.0\MB.Domain.pdb
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\MB.Infrastructure.Quary.csproj.AssemblyReference.cache
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\MB.Infrastructure.Quary.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\MB.Infrastructure.Quary.AssemblyInfoInputs.cache
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\MB.Infrastructure.Quary.AssemblyInfo.cs
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\MB.Infrastructure.Quary.csproj.CoreCompileInputs.cache
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\MB.Infrastructure.Quary.csproj.CopyComplete
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\MB.Infrastructure.Quary.dll
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\refint\MB.Infrastructure.Quary.dll
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\MB.Infrastructure.Quary.pdb
+D:\C# project\MasterBlogger\MB.Infrastructure.Quary\obj\Debug\net6.0\ref\MB.Infrastructure.Quary.dll

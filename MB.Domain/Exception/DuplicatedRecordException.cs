@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MB.Domain.ArticleCategoryApp.Exception
+namespace MB.Domain.Exception
 {
     public class DuplicatedRecordException : System.Exception
     {

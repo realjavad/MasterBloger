@@ -255,3 +255,5 @@ D:\C# project\MasterBlogger\MB.Presentation.MVC\bin\Debug\net6.0\runtimes\win\li
 D:\C# project\MasterBlogger\MB.Presentation.MVC\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\C# project\MasterBlogger\MB.Presentation.MVC\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\C# project\MasterBlogger\MB.Presentation.MVC\bin\Debug\net6.0\Microsoft.ApplicationInsights.dll
+D:\C# project\MasterBlogger\MB.Presentation.MVC\bin\Debug\net6.0\MB.Infrastructure.Quary.dll
+D:\C# project\MasterBlogger\MB.Presentation.MVC\bin\Debug\net6.0\MB.Infrastructure.Quary.pdb

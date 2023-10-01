@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MB.Application.Contracts.ViewModels
 {
-    public class ArticleViewModel
+    public class ArticleViewModel : CreateArticleViewModel
     {
         public long Id { get; set; }
         public string Title { get; set; }

@@ -2508,10 +2508,19 @@
       "MB.Infrastructure.Config/1.0.0": {
         "dependencies": {
           "MB.Application": "1.0.0",
+          "MB.Infrastructure.Quary": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
         },
         "runtime": {
           "MB.Infrastructure.Config.dll": {}
+        }
+      },
+      "MB.Infrastructure.Quary/1.0.0": {
+        "dependencies": {
+          "MB.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "MB.Infrastructure.Quary.dll": {}
         }
       }
     }
@@ -4062,6 +4071,11 @@
       "sha512": ""
     },
     "MB.Infrastructure.Config/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MB.Infrastructure.Quary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

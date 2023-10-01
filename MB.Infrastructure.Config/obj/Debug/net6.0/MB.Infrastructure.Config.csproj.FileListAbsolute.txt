@@ -19,3 +19,5 @@ D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\MB.Applica
 D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\MB.Domain.pdb
 D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\MB.Infrastructure.pdb
 D:\C# project\MasterBlogger\MB.Infrastructure.Config\obj\Debug\net6.0\MB.Infrastructure.Config.csproj.CopyComplete
+D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\MB.Infrastructure.Quary.dll
+D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\MB.Infrastructure.Quary.pdb

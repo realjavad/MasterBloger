@@ -3858,6 +3858,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "MB.Application": "1.0.0",
+          "MB.Infrastructure.Quary": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
         },
         "compile": {
@@ -3865,6 +3866,19 @@
         },
         "runtime": {
           "bin/placeholder/MB.Infrastructure.Config.dll": {}
+        }
+      },
+      "MB.Infrastructure.Quary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MB.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MB.Infrastructure.Quary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MB.Infrastructure.Quary.dll": {}
         }
       }
     }
@@ -10882,6 +10896,11 @@
       "type": "project",
       "path": "../MB.Infrastructure.Config/MB.Infrastructure.Config.csproj",
       "msbuildProject": "../MB.Infrastructure.Config/MB.Infrastructure.Config.csproj"
+    },
+    "MB.Infrastructure.Quary/1.0.0": {
+      "type": "project",
+      "path": "../MB.Infrastructure.Quary/MB.Infrastructure.Quary.csproj",
+      "msbuildProject": "../MB.Infrastructure.Quary/MB.Infrastructure.Quary.csproj"
     }
   },
   "projectFileDependencyGroups": {

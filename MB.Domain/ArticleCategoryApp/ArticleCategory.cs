@@ -1,6 +1,7 @@
 ﻿using MB.Domain.ArticleAgg;
-using MB.Domain.ArticleCategoryApp.Exception;
+using MB.Domain.ArticleCategoryApp;
 using MB.Domain.ArticleCategoryApp.Services;
+using MB.Domain.Exception;
 
 namespace MB.Domain.ArticleCategoryApp
 {

@@ -6,23 +6,34 @@ using System.Threading.Tasks;
 using MB.Application.Contracts.Article;
 using MB.Application.Contracts.ViewModels;
 using MB.Domain.ArticleAgg;
+using MB.Domain.ArticleAgg.Services;
 
 namespace MB.Application
 {
     public class ArticleApplication : IArticleApplication
     {
         private readonly IArticleRepository _articleRepository;
-
-        public ArticleApplication(IArticleRepository articleRepository)
+        private readonly IArticleValidatorService _ValidatorService;
+        public ArticleApplication(IArticleRepository articleRepository,IArticleValidatorService validatorService)
         {
             _articleRepository = articleRepository;
+            _ValidatorService = validatorService;
         }
 
         public void Create(CreateArticleViewModel Article)
         {
             var result = new Article(Article.Title, Article.ShortDescription, Article.Image, Article.Content,
-                Article.ArticleCategoryId);
+                Article.ArticleCategoryId,_ValidatorService);
             _articleRepository.CreateArticle(result);
+        }
+
+        public void Edit(ArticleViewModel Article)
+        {
+            var result = _articleRepository.GetById(Article.Id);
+
+            result.Edit(Article.Title,Article.ShortDescription,Article.Image,Article.Content,Article.ArticleCategoryId);
+
+            _articleRepository.Save();
         }
 
         public List<ArticleViewModel> GetArticles()
@@ -37,10 +48,19 @@ namespace MB.Application
             }).ToList();
         }
 
-        public CreateArticleViewModel GetBy(long Id)
+        public ArticleViewModel GetBy(long Id)
         {
             var result = _articleRepository.GetById(Id);
-            return new CreateArticleViewModel() {Title = result.Title,Image = result.Image,Content = result.Content,ShortDescription = result.ShortDescription,ArticleCategoryId = result.ArticleCategoryId};
+            return new ArticleViewModel()
+            {
+                Id = result.Id,
+                Title = result.Title,
+                Image = result.Image,
+                Content = result.Content,
+                ShortDescription = result.ShortDescription,
+                ArticleCategoryId = result.ArticleCategoryId,
+                CategoryTitle = result.ArticleCategory.Title
+            };
         }
 
         public void IsDeleted(long id)

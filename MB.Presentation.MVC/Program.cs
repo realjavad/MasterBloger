@@ -1,4 +1,4 @@
-using MB.Domain.ArticleCategoryApp.Exception;
+using MB.Domain.ArticleCategoryApp;
 using MB.Infrastructure.Config;
 using Microsoft.EntityFrameworkCore;
 

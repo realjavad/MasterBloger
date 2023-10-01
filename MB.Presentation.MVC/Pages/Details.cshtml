@@ -1,0 +1,15 @@
+﻿@page
+@model MB.Presentation.MVC.Pages.DetailsModel
+@{
+}
+
+<div>
+    <img style="width: 100%; height: 40rem" src="@Model.ArticleDetails.Image" class="img-fluid" alt="@Model.ArticleDetails.Title">
+    <p>About: @Model.ArticleDetails.CreationDate | @Model.ArticleDetails.ArticleCategory</></p>
+
+</div>
+<h1>@Model.ArticleDetails.Title</h1>
+<p>
+    @Model.ArticleDetails.Content
+</p>
+

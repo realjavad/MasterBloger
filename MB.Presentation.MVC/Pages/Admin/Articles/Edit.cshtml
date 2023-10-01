@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id=long}"
 @model MB.Presentation.MVC.Pages.Admin.Articles.EditModel
 @{
 }
@@ -84,32 +84,35 @@
 
         <div>
             <form method="POST">
+                <input type="hidden" asp-for="ArticleViewModel.Id" />
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Title</label>
-                    <input type="text" class="form-control" asp-for="CreateArticleViewModel.Title" name="@Model.CreateArticleViewModel.Title">
+                    <input type="text" class="form-control" asp-for="ArticleViewModel.Title" >
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Image</label>
-                    <input type="text" class="form-control" asp-for="CreateArticleViewModel.Image">
+                    <input type="text" class="form-control" asp-for="ArticleViewModel.Image">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea2">Short Description</label>
-                    <textarea style="border: none;width: 100%" asp-for="CreateArticleViewModel.ShortDescription" rows="2" ></textarea>
+                    <textarea style="border: none; width: 100%" asp-for="ArticleViewModel.ShortDescription" rows="2" ></textarea>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea2">Content</label>
-                    <textarea asp-for="CreateArticleViewModel.Content" style="border: none;width: 100%" rows="5"></textarea>
+                    <textarea asp-for="ArticleViewModel.Content" style="border: none; width: 100%" rows="5"></textarea>
                 </div>
                 <div class="form-group">
                     <select
-                        asp-for="CreateArticleViewModel.ArticleCategoryId"
-                        name="@Model.CreateArticleViewModel.ArticleCategoryId"
-                        class="form-control"
-                        >
+                        asp-items="@Model.ArticleCategoryTitle"
+                        asp-for="ArticleViewModel.ArticleCategoryId"
+                        class="form-control">
                         <option value="0">choose Article Category</option>
+                        <option selected value="@Model.ArticleViewModel.ArticleCategoryId">
+                            @Model.ArticleViewModel.CategoryTitle
+                        </option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-success">Create</button>
+                <button type="submit" class="btn btn-success">Edit</button>
             </form>
         </div>
     </div>

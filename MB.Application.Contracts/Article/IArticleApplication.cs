@@ -11,7 +11,8 @@ namespace MB.Application.Contracts.Article
     {
         List<ArticleViewModel> GetArticles();
         void Create(CreateArticleViewModel Article);
-        CreateArticleViewModel GetBy(long Id);
+        ArticleViewModel GetBy(long Id);
+        void Edit (ArticleViewModel Article);
         void IsDeleted(long id);
     }
 }

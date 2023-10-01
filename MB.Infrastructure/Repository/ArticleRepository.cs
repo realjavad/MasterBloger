@@ -24,6 +24,11 @@ namespace MB.Infrastructure.Repository
             Save();
         }
 
+        public bool Exist(string title)
+        {
+            return _context.Articles.Any(e => e.Title == title);
+        }
+
         public List<Article> GetAll()
         {
             return _context.Articles.Include(x => x.ArticleCategory).ToList();
@@ -31,7 +36,7 @@ namespace MB.Infrastructure.Repository
 
         public Article GetById(long id)
         {
-            return _context.Articles.FirstOrDefault(x => x.Id == id);
+            return _context.Articles.Include(x=>x.ArticleCategory).FirstOrDefault(x => x.Id == id);
         }
 
         public void Save()

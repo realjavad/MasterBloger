@@ -22,9 +22,10 @@ namespace MB.Presentation.MVC.Pages.Admin.Articles
             ArticleCategory = _articleCategoryApplication.List().Select(e=> new SelectListItem(e.Title,e.Id.ToString())).ToList();
         }
 
-        public void OnPost(CreateArticleViewModel CreateArticleViewModel)
+        public RedirectToPageResult OnPost(CreateArticleViewModel CreateArticleViewModel)
         {
             _articleApplication.Create(CreateArticleViewModel);
+            return RedirectToPage("/Admin/Articles/Index");
         }
     }
 }

@@ -11,6 +11,7 @@ namespace MB.Domain.ArticleAgg
         List<Article> GetAll();
         Article GetById(long id);
         void CreateArticle(Article entity);
+        bool Exist(string title);
         void Save();
     }
 }

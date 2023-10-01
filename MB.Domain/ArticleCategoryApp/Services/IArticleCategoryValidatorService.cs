@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MB.Domain.ArticleCategoryApp.Exception;
+using MB.Domain.ArticleCategoryApp;
+using MB.Domain.Exception;
 
 namespace MB.Domain.ArticleCategoryApp.Services
 {
