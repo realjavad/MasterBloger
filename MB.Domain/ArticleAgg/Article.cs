@@ -19,6 +19,7 @@ namespace MB.Domain.ArticleAgg
         public DateTime CreationDate { get; private set; }
         public long ArticleCategoryId { get; private set; }
         public ArticleCategory ArticleCategory { get; private set; }
+        public ICollection<Comment.Comment> Comments { get; private set; }
 
         protected Article()
         {
@@ -35,6 +36,7 @@ namespace MB.Domain.ArticleAgg
             ArticleCategoryId = articleCategoryId;
             IsDelete = false;
             CreationDate = DateTime.Now;
+            Comments = new List<Comment.Comment>();
         }
 
         private static void Validate(string title, long articleCategoryId)

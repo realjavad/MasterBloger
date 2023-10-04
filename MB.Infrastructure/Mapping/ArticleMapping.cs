@@ -23,6 +23,7 @@ namespace MB.Infrastructure.Mapping
             builder.Property(x => x.ShortDescription);
             builder
                 .HasOne(x => x.ArticleCategory).WithMany(x => x.Articles).HasForeignKey(x => x.ArticleCategoryId);
+            builder.HasMany(x => x.Comments).WithOne(x => x.Articles).HasForeignKey(x => x.ArticleId);
         }
     }
 }

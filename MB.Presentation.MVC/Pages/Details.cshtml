@@ -1,10 +1,10 @@
 ﻿@page
-@model MB.Presentation.MVC.Pages.DetailsModel
+@model DetailsModel
 @{
 }
 
 <div>
-    <img style="width: 100%; height: 40rem" src="@Model.ArticleDetails.Image" class="img-fluid" alt="@Model.ArticleDetails.Title">
+    <img style="height: 40rem; width: 100%;" src="@Model.ArticleDetails.Image" class="img-fluid" alt="@Model.ArticleDetails.Title">
     <p>About: @Model.ArticleDetails.CreationDate | @Model.ArticleDetails.ArticleCategory</></p>
 
 </div>
@@ -13,3 +13,127 @@
     @Model.ArticleDetails.Content
 </p>
 
+<div class="comment-section">
+    <h2>Comments</h2>
+    <div class="comments" id="comments">
+        <!-- Existing comments will be displayed here -->
+    </div>
+    <div class="comment-form">
+        <h3>Add a Comment</h3>
+        <form id="comment-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="name" placeholder="Your Email" required>
+            <textarea id="comment-text" placeholder="Your Comment" required></textarea>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+<section class="w-100" style="background-color: #f7f6f6;">
+
+    <div class="my-5 py-5 text-dark">
+
+        <div class="d-flex">
+
+            <div class="w-100">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="text-dark mb-0">comments List</h4>
+                </div>
+
+                <div class="card w-100 mb-3">
+                    <div class="card-body">
+                        <div class="d-flex flex-start">
+                            <img class="rounded-circle shadow-1-strong me-3"
+                                 src="./img/p-1.jpg" alt="avatar" width="40"
+                                 height="40"/>
+                            <div class="w-100">
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                    <h6 class="text-primary fw-bold ml-2 mb-0">
+                                        lara_stewart
+                                    </h6>
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0">2 days ago</p><span class="pl-3 pr-2">|</span>
+                                        <div class="d-flex flex-row align-items-center text-primary">
+                                            <form method="post">
+                                                <input type="hidden" name="" value=""/>
+                                                <button type="submit" class="btn p-0 m-2 d-inline">
+                                                    <i class="far fa-thumbs-up"></i>
+                                                </button>
+                                            </form>
+                                            <p class="mb-0">2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-dark">Hmm, This poster looks cool</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex flex-start">
+                            <img class="rounded-circle shadow-1-strong me-3"
+                                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(21).webp" alt="avatar" width="40"
+                                 height="40"/>
+                            <div class="w-100">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="text-primary fw-bold mb-0">
+                                        the_sylvester_cat
+                                        <span class="text-dark ms-2">Loving your work and profile! </span>
+                                    </h6>
+                                    <p class="mb-0">3 days ago</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="small mb-0" style="color: #aaa;">
+                                        <a href="#!" class="link-grey">Remove</a> •
+                                        <a href="#!" class="link-grey">Reply</a> •
+                                        <a href="#!" class="link-grey">Translate</a>
+                                    </p>
+                                    <div class="d-flex flex-row">
+                                        <i class="far fa-check-circle text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+
+                @*                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex flex-start">
+                            <img class="rounded-circle shadow-1-strong me-3"
+                                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(20).webp" alt="avatar" width="40"
+                                 height="40"/>
+                            <div class="w-100">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="text-primary fw-bold mb-0">
+                                        mindyy_def
+                                        <span class="text-dark ms-2">
+                                            Really cool Which filter are you using?
+                                        </span>
+                                    </h6>
+                                    <p class="mb-0">3 days ago</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="small mb-0" style="color: #aaa;">
+                                        <a href="#!" class="link-grey">Remove</a> •
+                                        <a href="#!" class="link-grey">Reply</a> •
+                                        <a href="#!" class="link-grey">Translate</a>
+                                    </p>
+                                    <div class="d-flex flex-row">
+                                        <i class="fas fa-user-plus" style="color: #aaa;"></i>
+                                        <i class="far fa-star mx-2" style="color: #aaa;"></i>
+                                        <i class="far fa-check-circle text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -73,7 +73,7 @@ namespace MB.Infrastructure.Migrations
                     b.Property<DateTime>("CreationDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 9, 17, 11, 45, 58, 0, DateTimeKind.Unspecified));
+                        .HasDefaultValue(new DateTime(2023, 10, 3, 13, 33, 4, 0, DateTimeKind.Unspecified));
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
@@ -90,6 +90,44 @@ namespace MB.Infrastructure.Migrations
                     b.ToTable("ArticleCategories", (string)null);
                 });
 
+            modelBuilder.Entity("MB.Domain.Comment.Comment", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+
+                    b.Property<long>("ArticleId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ArticleId");
+
+                    b.ToTable("Comments", (string)null);
+                });
+
             modelBuilder.Entity("MB.Domain.ArticleAgg.Article", b =>
                 {
                     b.HasOne("MB.Domain.ArticleCategoryApp.ArticleCategory", "ArticleCategory")
@@ -99,6 +137,22 @@ namespace MB.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("ArticleCategory");
+                });
+
+            modelBuilder.Entity("MB.Domain.Comment.Comment", b =>
+                {
+                    b.HasOne("MB.Domain.ArticleAgg.Article", "Articles")
+                        .WithMany("Comments")
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Articles");
+                });
+
+            modelBuilder.Entity("MB.Domain.ArticleAgg.Article", b =>
+                {
+                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("MB.Domain.ArticleCategoryApp.ArticleCategory", b =>

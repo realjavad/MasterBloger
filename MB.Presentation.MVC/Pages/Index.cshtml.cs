@@ -21,7 +21,6 @@ namespace MB.Presentation.MVC.Pages
             Articles = _articleQuary.GetArticles();
             GetFirst = Articles.FirstOrDefault();
             Articles.Remove(Articles.FirstOrDefault());
-            
         }
     }
 }

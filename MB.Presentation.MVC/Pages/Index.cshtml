@@ -26,7 +26,7 @@
                         <div class="small text-muted">@Model.GetFirst.CreationDate</div>
                         <h2 class="card-title">@Model.GetFirst.Title</h2>
                         <p class="card-text">@Model.GetFirst.Content</p>
-                        <a class="btn btn-primary" href="#!">Read more →</a>
+                        <a class="btn btn-primary" asp-route-Id="@Model.GetFirst.Id" asp-page="/Details">Read more →</a>
                     </div>
                 </div>
             <!-- Nested row for non-featured blog posts-->
