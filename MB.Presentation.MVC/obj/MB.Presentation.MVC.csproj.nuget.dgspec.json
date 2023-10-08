@@ -32,7 +32,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\C# project\\MasterBlogger\\MB.Domain\\MB.Domain.csproj": {
+                "projectPath": "D:\\C# project\\MasterBlogger\\MB.Domain\\MB.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -24,7 +24,6 @@ namespace MB.Domain.Comment
         {
         }
 
-
         public Comment(string name, string email, string message, long articleId)
         {
             Name = name;

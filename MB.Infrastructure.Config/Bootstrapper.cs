@@ -1,10 +1,12 @@
 ﻿using MB.Application;
 using MB.Application.Contracts.Article;
 using MB.Application.Contracts.ArticleCategory;
+using MB.Application.Contracts.Comment;
 using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleAgg.Services;
 using MB.Domain.ArticleCategoryApp;
 using MB.Domain.ArticleCategoryApp.Services;
+using MB.Domain.CommentAgg;
 using MB.Infrastructure.Context;
 using MB.Infrastructure.Quary;
 using MB.Infrastructure.Repository;
@@ -24,6 +26,8 @@ namespace MB.Infrastructure.Config
             services.AddTransient<IArticleCategoryValidatorService, ArticleCategoryValidatorService>();
             services.AddTransient<IArticleValidatorService, ArticleValidatorService>();
             services.AddTransient<IArticleQuary, ArticleQuary>();
+            services.AddTransient<ICommentApp, CommentApp>();
+            services.AddTransient<ICommentRepository,CommentRepository>();
             services.AddDbContext<MasterBloggerContext>(X => X.UseSqlServer(connectionString));
         }
     }
