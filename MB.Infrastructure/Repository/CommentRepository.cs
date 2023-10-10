@@ -26,12 +26,30 @@ namespace MB.Infrastructure.Repository
 
         public List<Comment> GetList()
         {
-           return _context.Comments.Include(x => x.ArticleId).ToList();
+           return _context.Comments.Include(x => x.Articles).ToList();
+        }
+
+        public Comment GetById(long id)
+        {
+            return _context.Comments.Include(x=>x.Articles).FirstOrDefault(x => x.Id == id);
         }
 
         public void Save()
         {
             _context.SaveChanges();
+        }
+
+        public void RejectStatus(Comment comment)
+        {
+            _context.Comments.FirstOrDefault(x=> x.Id == comment.Id).RejectStatus();
+            Save();
+        }
+
+        public void ConfirmStatus(Comment comment)
+        {
+            _context.Comments.FirstOrDefault(x => x.Id == comment.Id).ConfirmStatus();
+            Save();
+
         }
     }
 }

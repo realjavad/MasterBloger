@@ -33,5 +33,14 @@ namespace MB.Domain.Comment
             CreationDate = DateTime.Now;
             Status = StatusHelper.New;
         }
+
+        public void RejectStatus()
+        {
+            Status = StatusHelper.Canceled;
+        }
+        public void ConfirmStatus()
+        {
+            Status = StatusHelper.Confirmed;
+        }
     }
 }

@@ -18,15 +18,31 @@ namespace MB.Application
             _commentRepository = commentRepository;
         }
 
-        public void Create(Comment comment)
+        public void ConfirmStatus(CommentViewModel comment)
         {
-            throw new NotImplementedException();
+            var result = _commentRepository.GetById(comment.Id);
+            _commentRepository.ConfirmStatus(result);
         }
 
         public void Create(CreateComment comment)
         {
             var result = new Comment(comment.Name,comment.Email,comment.Message,comment.ArticleId);
             _commentRepository.Create(result);
+        }
+
+        public CommentViewModel GetBy(long id)
+        {
+            var result = _commentRepository.GetById(id);
+            return new CommentViewModel()
+            {
+                Id = result.Id,
+                Name = result.Name,
+                Email = result.Email,
+                Message = result.Message,
+                Status = result.Status,
+                Article = result.Articles.ToString(),
+                Creationdate = result.CreationDate.ToString()
+            };
         }
 
         public List<CommentViewModel> GetList()
@@ -39,8 +55,14 @@ namespace MB.Application
                 Message = x.Message,
                 Creationdate = x.CreationDate.ToString(),
                 Status = x.Status,
-                Article = x.Articles.ToString()
+                Article = x.Articles.Title.ToString()
             }).ToList();
+        }
+
+        public void RejectStatus(CommentViewModel comment)
+        {
+            var result = _commentRepository.GetById(comment.Id);
+            _commentRepository.RejectStatus(result);
         }
     }
 }

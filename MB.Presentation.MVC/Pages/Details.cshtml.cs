@@ -24,11 +24,11 @@ namespace MB.Presentation.MVC.Pages
             ArticleDetails  = _articleQuary.GetBy(Id);
         }
 
-        public void OnPost(CreateComment comment)
+        public IActionResult OnPost(CreateComment comment)
         {
             comment.ArticleId = ArticleDetails.Id;
             _commentApp.Create(comment);
+            return Page();
         }
-
     }
 }

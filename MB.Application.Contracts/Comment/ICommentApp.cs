@@ -11,5 +11,8 @@ namespace MB.Application.Contracts.Comment
     {
         List<CommentViewModel> GetList();
         void Create(CreateComment comment);
+        CommentViewModel GetBy(long id);
+        void RejectStatus(CommentViewModel comment);
+        void ConfirmStatus(CommentViewModel comment);
     }
 }

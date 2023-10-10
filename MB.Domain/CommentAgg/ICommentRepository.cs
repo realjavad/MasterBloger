@@ -11,6 +11,9 @@ namespace MB.Domain.CommentAgg
     {
         List<Comment.Comment> GetList();
         void Create(Comment.Comment comment);
+        Comment.Comment GetById(long id);
+        void RejectStatus(Comment.Comment comment);
+        void ConfirmStatus(Comment.Comment comment);
         void Save();
     }
 }
