@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _01_Feactures;
 using MB.Domain.ArticleAgg.Services;
 using MB.Domain.ArticleCategoryApp;
 
 namespace MB.Domain.ArticleAgg
 {
-    public class Article
+    public class Article : DomainBase<long>
     {
-        public long Id { get; private set; }
         public string Title { get; private set; }
         public string ShortDescription{ get; private set; }
         public string Image { get; private set; }
         public string Content { get; private set; }
         public bool IsDelete { get; private set; }
-        public DateTime CreationDate { get; private set; }
         public long ArticleCategoryId { get; private set; }
         public ArticleCategory ArticleCategory { get; private set; }
         public ICollection<Comment.Comment> Comments { get; private set; }
@@ -35,7 +34,6 @@ namespace MB.Domain.ArticleAgg
             Content = content;
             ArticleCategoryId = articleCategoryId;
             IsDelete = false;
-            CreationDate = DateTime.Now;
             Comments = new List<Comment.Comment>();
         }
 

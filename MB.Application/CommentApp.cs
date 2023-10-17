@@ -17,7 +17,7 @@ namespace MB.Application
         {
             _commentRepository = commentRepository;
         }
-
+         
         public void ConfirmStatus(CommentViewModel comment)
         {
             var result = _commentRepository.GetById(comment.Id);
@@ -40,7 +40,9 @@ namespace MB.Application
                 Email = result.Email,
                 Message = result.Message,
                 Status = result.Status,
+                Vote = result.Vote,
                 Article = result.Articles.ToString(),
+                ArticleId = result.ArticleId,
                 Creationdate = result.CreationDate.ToString()
             };
         }
@@ -55,6 +57,8 @@ namespace MB.Application
                 Message = x.Message,
                 Creationdate = x.CreationDate.ToString(),
                 Status = x.Status,
+                Vote = x.Vote,
+                ArticleId = x.ArticleId,
                 Article = x.Articles.Title.ToString()
             }).ToList();
         }
@@ -63,6 +67,12 @@ namespace MB.Application
         {
             var result = _commentRepository.GetById(comment.Id);
             _commentRepository.RejectStatus(result);
+        }
+
+        public void Vote(long Id)
+        {
+            var result = _commentRepository.GetById(Id);
+            _commentRepository.Vote(result);
         }
     }
 }

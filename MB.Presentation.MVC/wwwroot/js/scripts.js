@@ -27,10 +27,20 @@ const resultTest1 = document.getElementById("test1");
 const resultTest2 = document.getElementById("test2");
 const myForm = document.getElementById("formdata");
 
-resultTest1.addEventListener("click",
-    (e) => {
-        myForm.setAttribute("method", "Get");
-        console.log("is run..!");
+if (resultTest1 && resultTest2 && myForm) {
+    resultTest1.addEventListener("click",
+        (e) => {
+            myForm.setAttribute("method", "Get");
+            console.log("is run..!");
+        });
+}
+
+const button = document.getElementById("votebtn");
+const number = document.getElementById("votenumber");
+button.addEventListener("click",
+    function() {
+        console.log("is start..!")
+        number.innerHTML++
     });
 
 

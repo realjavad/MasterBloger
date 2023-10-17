@@ -21,3 +21,5 @@ D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\MB.Infrast
 D:\C# project\MasterBlogger\MB.Infrastructure.Config\obj\Debug\net6.0\MB.Infrastructure.Config.csproj.CopyComplete
 D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\MB.Infrastructure.Quary.dll
 D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\MB.Infrastructure.Quary.pdb
+D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\01_Feactures.dll
+D:\C# project\MasterBlogger\MB.Infrastructure.Config\bin\Debug\net6.0\01_Feactures.pdb

@@ -15,5 +15,7 @@ namespace MB.Infrastructure.Quary
         public string Content { get; set; }
         public string CreationDate { get; set; }
         public string ArticleCategory { get; set; }
+        public int CommentCount { get; set; }
+        public List<CommentQueryView> Comments { get; set; }
     }
 }

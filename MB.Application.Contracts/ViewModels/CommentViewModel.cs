@@ -14,6 +14,8 @@ namespace MB.Application.Contracts.ViewModels
         public string Message { get; set; }
         public string Creationdate { get; set; }
         public int Status { get; set; }
+        public int Vote { get; set; }
         public string Article { get; set; }
+        public long  ArticleId { get; set; }
     }
 }

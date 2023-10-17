@@ -14,6 +14,7 @@ namespace MB.Domain.CommentAgg
         Comment.Comment GetById(long id);
         void RejectStatus(Comment.Comment comment);
         void ConfirmStatus(Comment.Comment comment);
+        void Vote(Comment.Comment comment);
         void Save();
     }
 }

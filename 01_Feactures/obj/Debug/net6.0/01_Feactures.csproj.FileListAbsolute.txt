@@ -1,0 +1,12 @@
+D:\C# project\MasterBlogger\01_Feactures\bin\Debug\net6.0\01_Feactures.deps.json
+D:\C# project\MasterBlogger\01_Feactures\bin\Debug\net6.0\01_Feactures.dll
+D:\C# project\MasterBlogger\01_Feactures\bin\Debug\net6.0\01_Feactures.pdb
+D:\C# project\MasterBlogger\01_Feactures\obj\Debug\net6.0\01_Feactures.csproj.AssemblyReference.cache
+D:\C# project\MasterBlogger\01_Feactures\obj\Debug\net6.0\01_Feactures.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# project\MasterBlogger\01_Feactures\obj\Debug\net6.0\01_Feactures.AssemblyInfoInputs.cache
+D:\C# project\MasterBlogger\01_Feactures\obj\Debug\net6.0\01_Feactures.AssemblyInfo.cs
+D:\C# project\MasterBlogger\01_Feactures\obj\Debug\net6.0\01_Feactures.csproj.CoreCompileInputs.cache
+D:\C# project\MasterBlogger\01_Feactures\obj\Debug\net6.0\01_Feactures.dll
+D:\C# project\MasterBlogger\01_Feactures\obj\Debug\net6.0\refint\01_Feactures.dll
+D:\C# project\MasterBlogger\01_Feactures\obj\Debug\net6.0\01_Feactures.pdb
+D:\C# project\MasterBlogger\01_Feactures\obj\Debug\net6.0\ref\01_Feactures.dll

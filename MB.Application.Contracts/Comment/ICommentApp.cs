@@ -14,5 +14,6 @@ namespace MB.Application.Contracts.Comment
         CommentViewModel GetBy(long id);
         void RejectStatus(CommentViewModel comment);
         void ConfirmStatus(CommentViewModel comment);
+        void Vote(long id);
     }
 }

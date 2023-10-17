@@ -87,10 +87,21 @@
           }
         }
       },
+      "01_Feactures/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/01_Feactures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_Feactures.dll": {}
+        }
+      },
       "MB.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "01_Feactures": "1.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
         },
         "compile": {
@@ -210,6 +221,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "01_Feactures/1.0.0": {
+      "type": "project",
+      "path": "../01_Feactures/01_Feactures.csproj",
+      "msbuildProject": "../01_Feactures/01_Feactures.csproj"
     },
     "MB.Domain/1.0.0": {
       "type": "project",

@@ -15,3 +15,5 @@ D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\ref\MB.Infrastruc
 D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Domain.dll
 D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Domain.pdb
 D:\C# project\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.csproj.CopyComplete
+D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\01_Feactures.dll
+D:\C# project\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\01_Feactures.pdb

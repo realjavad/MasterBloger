@@ -41,15 +41,21 @@ namespace MB.Infrastructure.Repository
 
         public void RejectStatus(Comment comment)
         {
-            _context.Comments.FirstOrDefault(x=> x.Id == comment.Id).RejectStatus();
+            _context.Comments.Include(x => x.Articles).FirstOrDefault(x=> x.Id == comment.Id).RejectStatus();
             Save();
         }
 
         public void ConfirmStatus(Comment comment)
         {
-            _context.Comments.FirstOrDefault(x => x.Id == comment.Id).ConfirmStatus();
+            _context.Comments.Include(x => x.Articles).FirstOrDefault(x => x.Id == comment.Id).ConfirmStatus();
             Save();
 
+        }
+
+        public void Vote(Comment comment)
+        {
+            _context.Comments.Include(x => x.Articles).FirstOrDefault(x => x.Id == comment.Id).VoteCommentes();
+            Save();
         }
     }
 }

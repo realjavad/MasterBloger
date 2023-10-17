@@ -73,7 +73,7 @@ namespace MB.Infrastructure.Migrations
                     b.Property<DateTime>("CreationDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 10, 3, 13, 33, 4, 0, DateTimeKind.Unspecified));
+                        .HasDefaultValue(new DateTime(2023, 10, 10, 21, 16, 3, 0, DateTimeKind.Unspecified));
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
@@ -119,6 +119,9 @@ namespace MB.Infrastructure.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Vote")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

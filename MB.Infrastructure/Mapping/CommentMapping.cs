@@ -20,6 +20,7 @@ namespace MB.Infrastructure.Mapping
             builder.Property(x => x.Message).IsRequired();
             builder.Property(x => x.CreationDate);
             builder.Property(x => x.Status);
+            builder.Property(x => x.Vote);
             builder.HasOne(x=>x.Articles).WithMany(x=>x.Comments).HasForeignKey(x=>x.ArticleId);
         }
     }

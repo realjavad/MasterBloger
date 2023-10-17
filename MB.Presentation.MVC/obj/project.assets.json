@@ -3801,6 +3801,16 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "01_Feactures/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/01_Feactures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_Feactures.dll": {}
+        }
+      },
       "MB.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3832,6 +3842,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "01_Feactures": "1.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
         },
         "compile": {
@@ -10874,6 +10885,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "01_Feactures/1.0.0": {
+      "type": "project",
+      "path": "../01_Feactures/01_Feactures.csproj",
+      "msbuildProject": "../01_Feactures/01_Feactures.csproj"
     },
     "MB.Application/1.0.0": {
       "type": "project",
