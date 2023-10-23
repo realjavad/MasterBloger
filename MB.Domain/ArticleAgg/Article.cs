@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using _01_Feactures;
+using _01_Feactures.Domain;
 using MB.Domain.ArticleAgg.Services;
 using MB.Domain.ArticleCategoryApp;
 

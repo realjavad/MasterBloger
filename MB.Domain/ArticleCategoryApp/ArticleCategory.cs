@@ -1,4 +1,4 @@
-﻿using _01_Feactures;
+﻿using _01_Feactures.Domain;
 using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleCategoryApp;
 using MB.Domain.ArticleCategoryApp.Services;
